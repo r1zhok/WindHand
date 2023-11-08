@@ -64,8 +64,10 @@
                         onAction="#workButtonClick"/>
             </children>
         </AnchorPane>
-        <ChoiceBox id="WorkSpaceChoiseBox" layoutX="355.0" layoutY="14.0" prefHeight="26.0" prefWidth="231.0"/>
-        <Label layoutX="51.0" layoutY="16.0" text="Your account" textFill="WHITE" onMouseClicked="#registrationOrAuthorization">
+        <ChoiceBox fx:id="workSpaceChoiceBox" layoutX="355.0" layoutY="14.0" prefHeight="26.0" prefWidth="231.0"
+            onAction="#chooseWorkSpace"/>
+        <Label layoutX="51.0" layoutY="16.0" text="Your account" textFill="WHITE"
+               onMouseClicked="#registrationOrAuthorization">
             <font>
                 <Font name="System Bold Italic" size="18.0"/>
             </font>
@@ -75,7 +77,8 @@
                 <Font name="System Bold Italic" size="18.0"/>
             </font>
         </Label>
-        <Avatar id="AccountIcon" layoutX="8.0" layoutY="10.0" style="-fx-background-color: #FF0000;"/>
+        <Avatar id="AccountIcon" layoutX="8.0" layoutY="10.0" style="-fx-background-color: #FF0000;"
+                onMouseClicked="#registrationOrAuthorization"/>
         <Line endX="-108.0" endY="-216.0" layoutX="291.0" layoutY="215.0" startX="-107.99998474121094" startY="-163.0"
               stroke="WHITE"/>
     </children>

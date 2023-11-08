@@ -1,5 +1,6 @@
 package org.windhand.controller;
 
+import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.fxml.FXML;
@@ -7,9 +8,12 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ChoiceBox;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.List;
 
 public class MainWindowController {
 
@@ -31,6 +35,9 @@ public class MainWindowController {
     private Button normalWorkButton;
     @FXML
     private Button workButton;
+    @FXML
+    private ChoiceBox<String> workSpaceChoiceBox;
+    private boolean isBlockerOn = true;
 
     private void switchPage(String fxmlURL, Event event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../" + fxmlURL));
@@ -49,6 +56,7 @@ public class MainWindowController {
             workButton.setStyle("-fx-background-color: #A0A0A0;");
             normalWorkButton.setStyle("-fx-background-color: #101010;");
         }
+        this.isBlockerOn = true;
     }
 
     public void normalButtonClick() {
@@ -59,6 +67,7 @@ public class MainWindowController {
             workButton.setStyle("-fx-background-color: #101010;");
             normalWorkButton.setStyle("-fx-background-color: #A0A0A0;");
         }
+        this.isBlockerOn = false;
     }
 
     public void registrationOrAuthorization(javafx.scene.input.MouseEvent mouseEvent) {
@@ -95,10 +104,12 @@ public class MainWindowController {
 
 
     public void blockerButtonClick(ActionEvent event) {
-        try {
-            switchPage("blocker-page.fxml", event);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+        if (this.isBlockerOn) {
+            try {
+                switchPage("blocker-page.fxml", event);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 
@@ -125,5 +136,24 @@ public class MainWindowController {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public void chooseWorkSpace(ActionEvent event) {
+        initialize();
+        String selectedWorkSpace = workSpaceChoiceBox.getValue();
+        if ("Створити новий робочий простір".equals(selectedWorkSpace)) {
+            // Реагуємо на вибір створення нового робочого простору
+            //createNewWorkSpace();
+        } else {
+            // Обробка вибору існуючої робочої області
+        }
+    }
+
+    public void initialize() {
+        List<String> workSpaces = Arrays.asList("WorkSpace1", "WorkSpace2", "WorkSpace3");
+
+        workSpaceChoiceBox.setItems(FXCollections.observableArrayList(workSpaces));
+
+        workSpaceChoiceBox.getItems().add("Створити новий робочий простір");
     }
 }

@@ -5,6 +5,12 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
+import org.windhand.application.ApplicationBlocker;
+import org.windhand.site.DNSServer;
+import org.windhand.site.SiteBlock;
+import org.windhand.timer.TimerWork;
+
+import java.util.Timer;
 
 public class Manager extends Application {
 
@@ -18,13 +24,14 @@ public class Manager extends Application {
         stage.show();
 
         /*Timer timer = new Timer();
-        timer.start();*/
+        timer.scheduleAtFixedRate(new TimerWork(), 0, 3000);*/
+
 
         /*DNSServer server = new DNSServer();
         server.addSiteToBlock("http://www.java2s.com/Code/Java/Network-Protocol/Asimpleproxyserver.htm");
-        server.start();
+        server.start();*/
 
-        ApplicationBlocker app = new ApplicationBlocker();
+        /*ApplicationBlocker app = new ApplicationBlocker();
         app.addAppToBlock("notepad", 30000);
         app.addAppToBlock("chrome", 30000);
         app.startToBlock();*/
