@@ -1,0 +1,56 @@
+.workButton {
+    -fx-background-color: #A0A0A0;
+}
+
+.normalButton {
+    -fx-background-color: #101010;
+}
+
+.aboutUs {
+    -fx-border-radius: 5;
+     -fx-text-fill: #fff;
+     -fx-border-color: #fff;
+     -fx-background-color: rgba(0, 0, 0, 0);
+}
+
+.helpButton {
+    -fx-border-radius: 5;
+    -fx-text-fill: #fff;
+    -fx-border-color: #fff;
+    -fx-background-color: rgba(0, 0, 0, 0);
+}
+
+.settingButton {
+    -fx-border-radius: 5;
+    -fx-text-fill: #fff;
+    -fx-border-color: #fff;
+    -fx-background-color: rgba(0, 0, 0, 0);
+}
+
+.blockerButton {
+    -fx-border-radius: 5;
+    -fx-text-fill: #fff;
+    -fx-border-color: #fff;
+    -fx-background-color: rgba(0, 0, 0, 0);
+}
+
+.taskButton {
+    -fx-border-radius: 5;
+    -fx-text-fill: #fff;
+    -fx-border-color: #fff;
+    -fx-background-color: rgba(0, 0, 0, 0);
+}
+
+.assistantButton {
+    -fx-border-radius: 5;
+    -fx-text-fill: #fff;
+    -fx-border-color: #fff;
+    -fx-background-color: rgba(0, 0, 0, 0);
+}
+
+.staticButton {
+    -fx-border-color: #fff;
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-text-fill: #fff;
+    -fx-border-radius: 5;
+}

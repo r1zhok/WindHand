@@ -4,12 +4,16 @@ import javafx.application.Platform;
 import org.windhand.notification.NotificationClass;
 
 import java.util.Random;
+import java.util.TimerTask;
 
-public class Timer extends Thread {
+public class TimerWork extends TimerTask {
 
     private static final Random generator = new Random();
 
-    @Override
+
+    /**
+     * переписати логіку мого таймера
+     * */
     public void run() {
         while (true) {
             Tips[] tips = Tips.values();
@@ -18,17 +22,13 @@ public class Timer extends Thread {
             long end = System.currentTimeMillis();
 
             while (!((end - start) >= 3000)) {
-                try {
-                    sleep(3000);
-                    end = System.currentTimeMillis();
-                } catch (InterruptedException e) {
-                    throw new RuntimeException(e);
-                }
+
             }
+            String wasteTime = String.valueOf(end - start);
 
             Platform.runLater(() -> {
                 NotificationClass.createNotification(tips[generator.nextInt(tips.length)].getTip() +
-                        " you worked for 3 seconds");
+                        " you worked for" + wasteTime + "seconds");
             });
         }
     }
