@@ -158,7 +158,7 @@
       </AnchorPane>
       <AnchorPane layoutY="48.0" prefHeight="353.0" prefWidth="192.0" style="-fx-background-color: #252532;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
          <children>
-            <Button fx:id="staticButton1" layoutX="15.0" layoutY="26.0" mnemonicParsing="false" onAction="#statisticButtonClick" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: #A892C4; -fx-border-color: #A892C4;" styleClass="staticButton" text="Statistic" textFill="WHITE" />
+            <Button fx:id="staticButton1" layoutX="15.0" layoutY="25.0" mnemonicParsing="false" onAction="#statisticButtonClick" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: #A892C4; -fx-border-color: #A892C4;" styleClass="staticButton" text="Statistic" textFill="WHITE" />
             <Button fx:id="staticButton11" layoutX="15.0" layoutY="71.0" mnemonicParsing="false" onAction="#statisticButtonClick" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: #A892C4; -fx-border-color: #A892C4;" styleClass="staticButton" text="Blocker" textFill="WHITE" />
             <Button fx:id="staticButton111" layoutX="15.0" layoutY="120.0" mnemonicParsing="false" onAction="#statisticButtonClick" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: #A892C4; -fx-border-color: #A892C4;" styleClass="staticButton" text="Setting" textFill="WHITE" />
             <Button fx:id="staticButton1111" layoutX="15.0" layoutY="166.0" mnemonicParsing="false" onAction="#statisticButtonClick" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: #A892C4; -fx-border-color: #A892C4;" styleClass="staticButton" text="Help" textFill="WHITE" />
