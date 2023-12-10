@@ -1,103 +1,170 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.gluonhq.charm.glisten.control.Avatar?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
-<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Circle?>
-<?import javafx.scene.shape.Line?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.windhand.controller.MainWindowController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #252532;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <AnchorPane layoutX="182.0" layoutY="52.0" prefHeight="348.0" prefWidth="419.0" style="-fx-background-color: #29273c;">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="301.0" layoutX="22.0" layoutY="59.0" stroke="BLACK" strokeType="INSIDE" width="180.0">
+         <fill>
+            <LinearGradient endX="0.5605700712589075" endY="1.0" startX="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.686274528503418" green="0.5137255191802979" blue="0.9058823585510254" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="0.6781799793243408" green="0.5162000060081482" blue="0.8899999856948853" opacity="0.7246654033660889" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5357873629071862">
+                     <color>
+                        <Color red="0.364705890417099" green="0.30980393290519714" blue="0.48627451062202454" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.6807000041007996" green="0.5130000114440918" blue="0.8999999761581421" opacity="0.30783939361572266" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="33.0" layoutX="22.0" layoutY="59.0" stroke="BLACK" strokeType="INSIDE" width="180.0" />
+      <Label layoutX="46.0" layoutY="60.0" text="Blocking applications" textFill="WHITE">
+         <font>
+            <Font name="Sama Gujarati ExtraBold" size="13.0" />
+         </font>
+      </Label>
+      <CheckBox layoutX="172.0" layoutY="114.0" mnemonicParsing="false" />
+      <Label layoutX="45.0" layoutY="106.0" text="Telegram" textFill="WHITE">
+         <font>
+            <Font name="Sama Gujarati ExtraBold" size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="61.0" layoutY="319.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="100.0" style="-fx-background-color: #B589ED; -fx-border-radius: 20; -fx-border-radius: 10;" text="Add app" textFill="WHITE">
+         <font>
+            <Font name="Sama Gujarati ExtraBold" size="11.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="301.0" layoutX="235.0" layoutY="62.0" stroke="BLACK" strokeType="INSIDE" width="180.0">
+         <fill>
+            <LinearGradient endX="0.5605700712589075" endY="1.0" startX="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.686274528503418" green="0.5137255191802979" blue="0.9058823585510254" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.006711409395973154">
+                     <color>
+                        <Color red="0.6781799793243408" green="0.5162000060081482" blue="0.8899999856948853" opacity="0.7246654033660889" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5357873629071862">
+                     <color>
+                        <Color red="0.364705890417099" green="0.30980393290519714" blue="0.48627451062202454" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.6807000041007996" green="0.5130000114440918" blue="0.8999999761581421" opacity="0.30783939361572266" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="33.0" layoutX="236.0" layoutY="60.0" stroke="BLACK" strokeType="INSIDE" width="180.0" />
+      <Label layoutX="280.0" layoutY="60.0" text="Blocking sites" textFill="WHITE">
+         <font>
+            <Font name="Sama Gujarati ExtraBold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="256.0" layoutY="107.0" text="Telegram" textFill="WHITE">
+         <font>
+            <Font name="Sama Gujarati ExtraBold" size="13.0" />
+         </font>
+      </Label>
+      <CheckBox layoutX="383.0" layoutY="116.0" mnemonicParsing="false" />
+      <Button layoutX="274.0" layoutY="322.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="100.0" style="-fx-background-color: #B589ED; -fx-border-radius: 20; -fx-border-radius: 10;" text="Add site" textFill="WHITE">
+         <font>
+            <Font name="Sama Gujarati ExtraBold" size="11.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#36364b" height="19.0" layoutX="467.0" layoutY="240.0" stroke="BLACK" strokeType="INSIDE" width="94.0" />
+      <Label layoutX="481.0" layoutY="237.0" text="Template for timer" textFill="WHITE">
+         <font>
+            <Font name="Sama Devanagari ExtraBold" size="8.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#36364b" height="93.0" layoutX="468.0" layoutY="265.0" stroke="BLACK" strokeType="INSIDE" width="94.0" />
+      <Label layoutX="499.0" layoutY="270.0" text="1h 35m" textFill="WHITE">
+         <font>
+            <Font name="Sama Devanagari ExtraBold" size="8.0" />
+         </font>
+      </Label>
+      <Label layoutX="499.0" layoutY="287.0" text="1h 35m" textFill="WHITE">
+         <font>
+            <Font name="Sama Devanagari ExtraBold" size="8.0" />
+         </font>
+      </Label>
+      <Label layoutX="500.0" layoutY="305.0" text="1h 35m" textFill="WHITE">
+         <font>
+            <Font name="Sama Devanagari ExtraBold" size="8.0" />
+         </font>
+      </Label>
+      <Label layoutX="500.0" layoutY="325.0" text="1h 35m" textFill="WHITE">
+         <font>
+            <Font name="Sama Devanagari ExtraBold" size="8.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="-5.0" prefHeight="46.0" prefWidth="600.0" style="-fx-background-color: #0E1116;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
-            <Label layoutX="84.0" layoutY="30.0" text="Timer for blocker" textFill="WHITE" />
-            <Label layoutX="111.0" layoutY="99.0" prefHeight="17.0" prefWidth="39.0" text="History" textFill="WHITE" />
-            <ChoiceBox layoutX="55.0" layoutY="62.0" prefWidth="150.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" layoutX="30.0" layoutY="122.0" stroke="BLACK" strokeType="INSIDE" width="185.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="23.0" layoutX="55.0" layoutY="138.0" stroke="BLACK" strokeType="INSIDE" width="150.0">
-               <effect>
-                  <DropShadow blurType="ONE_PASS_BOX" height="26.9" radius="13.962499999999999" width="30.95" />
-               </effect></Rectangle>
-            <Label layoutX="65.0" layoutY="143.0" text="2023/10/10 12:00 am - 5:35 pm">
+            <ImageView fitHeight="30.0" fitWidth="43.0" layoutX="17.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../Downloads/icons8-menu-50.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="83.0" layoutY="8.0" text="EFFICIENT BOOST" textFill="#a892c4">
                <font>
-                  <Font size="10.0" />
+                  <Font name="Sama Gujarati ExtraBold" size="13.0" />
                </font>
             </Label>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="23.0" layoutX="55.0" layoutY="180.0" stroke="BLACK" strokeType="INSIDE" width="150.0">
-               <effect>
-                  <DropShadow blurType="ONE_PASS_BOX" height="26.9" radius="13.962499999999999" width="30.95" />
-               </effect>
-            </Rectangle>
-            <Label layoutX="63.0" layoutY="185.0" text="2023/10/10 12:00 am - 5:35 pm">
-               <font>
-                  <Font size="10.0" />
-               </font>
-            </Label>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="23.0" layoutX="55.0" layoutY="220.0" stroke="BLACK" strokeType="INSIDE" width="150.0">
-               <effect>
-                  <DropShadow blurType="ONE_PASS_BOX" height="26.9" radius="13.962499999999999" width="30.95" />
-               </effect>
-            </Rectangle>
-            <Label layoutX="62.0" layoutY="224.0" text="2023/10/10 12:00 am - 5:35 pm">
-               <font>
-                  <Font size="10.0" />
-               </font>
-            </Label>
-            <Circle fill="#4b4b97" layoutX="44.0" layoutY="151.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
-            <Circle fill="#4b4b97" layoutX="45.0" layoutY="231.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
-            <Circle fill="#4b4b97" layoutX="44.0" layoutY="192.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3e3c6f" height="97.0" layoutX="231.0" layoutY="40.0" stroke="BLACK" strokeType="INSIDE" width="174.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3e3c6f" height="97.0" layoutX="231.0" layoutY="161.0" stroke="BLACK" strokeType="INSIDE" width="174.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" height="36.0" layoutX="231.0" layoutY="32.0" stroke="BLACK" strokeType="INSIDE" width="174.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" height="36.0" layoutX="231.0" layoutY="152.0" stroke="BLACK" strokeType="INSIDE" width="174.0" />
-            <Text fill="WHITE" layoutX="237.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blocking applications">
-               <font>
-                  <Font size="12.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="240.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blocking sites">
-               <font>
-                  <Font size="12.0" />
-               </font>
-            </Text>
-            <Line endX="73.0" endY="-1.52587890625E-5" layoutX="332.0" layoutY="88.0" startX="-100.0" />
-            <Text fill="WHITE" layoutX="257.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telegram" />
-            <CheckBox layoutX="377.0" layoutY="69.0" mnemonicParsing="false" prefHeight="1.0" prefWidth="1.0" />
-            <Button layoutX="373.0" layoutY="37.0" mnemonicParsing="false" prefHeight="1.0" prefWidth="14.0" text="+" />
-            <Button layoutX="373.0" layoutY="157.0" mnemonicParsing="false" prefHeight="1.0" prefWidth="14.0" text="+" />
-         </children></AnchorPane>
-      <AnchorPane layoutX="-7.0" layoutY="52.0" prefHeight="348.0" prefWidth="189.0" style="-fx-background-color: #333366;">
-         <children>
-            <Button fx:id="staticButton" layoutX="15.0" layoutY="20.0" mnemonicParsing="false" onAction="#statisticButtonClick" prefHeight="26.0" prefWidth="159.0" styleClass="staticButton" text="Statistic" />
-            <Button fx:id="assistantButton" layoutX="15.0" layoutY="63.0" mnemonicParsing="false" onAction="#assistantButtonClick" prefHeight="26.0" prefWidth="159.0" styleClass="assistantButton" text="Assistant" />
-            <Button fx:id="taskButton" layoutX="15.0" layoutY="104.0" mnemonicParsing="false" onAction="#taskButtonClick" prefHeight="26.0" prefWidth="159.0" styleClass="taskButton" text="Task" />
-            <Button fx:id="blockerButton" layoutX="15.0" layoutY="148.0" mnemonicParsing="false" onAction="#blockerButtonClick" prefHeight="26.0" prefWidth="159.0" styleClass="blockerButton" text="Blocker" />
-            <Button fx:id="settingButton" layoutX="15.0" layoutY="187.0" mnemonicParsing="false" onAction="#settingButtonClick" prefHeight="26.0" prefWidth="159.0" styleClass="settingButton" text="Setting" />
-            <Button fx:id="helpButton" layoutX="15.0" layoutY="227.0" mnemonicParsing="false" onAction="#helpButtonClick" prefHeight="26.0" prefWidth="159.0" styleClass="helpButton" text="Help" />
-            <Button fx:id="aboutUsButton" layoutX="15.0" layoutY="268.0" mnemonicParsing="false" onAction="#aboutUsButtonClick" prefHeight="26.0" prefWidth="159.0" styleClass="aboutUs" text="About us" />
-            <Button fx:id="normalWorkButton" layoutX="94.0" layoutY="310.0" mnemonicParsing="false" onAction="#normalButtonClick" prefHeight="24.0" prefWidth="73.0" styleClass="normalButton" text="Normal" textFill="WHITE" />
-            <Button fx:id="workButton" layoutX="20.0" layoutY="310.0" mnemonicParsing="false" onAction="#workButtonClick" prefHeight="26.0" prefWidth="73.0" styleClass="workButton" text="Work" textFill="WHITE" />
          </children>
       </AnchorPane>
-      <ChoiceBox fx:id="workSpaceChoiceBox" layoutX="355.0" layoutY="14.0" onAction="#chooseWorkSpace" prefHeight="26.0" prefWidth="231.0" />
-      <Label layoutX="51.0" layoutY="16.0" onMouseClicked="#registrationOrAuthorization" text="Your account" textFill="WHITE">
-         <font>
-            <Font name="System Bold Italic" size="18.0" />
-         </font>
-      </Label>
-      <Label layoutX="198.0" layoutY="16.0" text="Your work space:" textFill="WHITE">
-         <font>
-            <Font name="System Bold Italic" size="18.0" />
-         </font>
-      </Label>
-      <Avatar id="AccountIcon" layoutX="8.0" layoutY="10.0" onMouseClicked="#registrationOrAuthorization" style="-fx-background-color: #FF0000;" />
-      <Line endX="-108.0" endY="-216.0" layoutX="291.0" layoutY="215.0" startX="-107.99998474121094" startY="-163.0" stroke="WHITE" />
+      <ImageView fitHeight="24.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true" />
+      <AnchorPane layoutX="19.0" layoutY="41.0" prefHeight="353.0" prefWidth="189.0" style="-fx-background-color: #252532;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+         <children>
+            <Button fx:id="staticButton" layoutX="15.0" layoutY="26.0" mnemonicParsing="false" onAction="#statisticButtonClick" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: #A892C4; -fx-border-color: #A892C4;" styleClass="staticButton" text="Statistic" textFill="WHITE" />
+            <Button fx:id="staticButton1" layoutX="15.0" layoutY="71.0" mnemonicParsing="false" onAction="#statisticButtonClick" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: #A892C4; -fx-border-color: #A892C4;" styleClass="staticButton" text="Blocker" textFill="WHITE" />
+            <Button fx:id="staticButton11" layoutX="15.0" layoutY="120.0" mnemonicParsing="false" onAction="#statisticButtonClick" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: #A892C4; -fx-border-color: #A892C4;" styleClass="staticButton" text="Setting" textFill="WHITE" />
+            <Button fx:id="staticButton111" layoutX="15.0" layoutY="166.0" mnemonicParsing="false" onAction="#statisticButtonClick" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: #A892C4; -fx-border-color: #A892C4;" styleClass="staticButton" text="Help" textFill="WHITE" />
+            <Button fx:id="staticButton1111" layoutX="15.0" layoutY="215.0" mnemonicParsing="false" onAction="#statisticButtonClick" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: #A892C4; -fx-border-color: #A892C4;" styleClass="staticButton" text="About us" textFill="WHITE" />
+            <Button fx:id="staticButton1112" layoutX="15.0" layoutY="296.0" mnemonicParsing="false" onAction="#statisticButtonClick" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: #A892C4; -fx-border-color: #A892C4;" styleClass="staticButton" text="Support us" textFill="WHITE" AnchorPane.leftAnchor="15.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="48.0" prefHeight="353.0" prefWidth="192.0" style="-fx-background-color: #252532;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+         <children>
+            <Button fx:id="staticButton1" layoutX="15.0" layoutY="26.0" mnemonicParsing="false" onAction="#statisticButtonClick" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: #A892C4; -fx-border-color: #A892C4;" styleClass="staticButton" text="Statistic" textFill="WHITE" />
+            <Button fx:id="staticButton11" layoutX="15.0" layoutY="71.0" mnemonicParsing="false" onAction="#statisticButtonClick" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: #A892C4; -fx-border-color: #A892C4;" styleClass="staticButton" text="Blocker" textFill="WHITE" />
+            <Button fx:id="staticButton111" layoutX="15.0" layoutY="120.0" mnemonicParsing="false" onAction="#statisticButtonClick" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: #A892C4; -fx-border-color: #A892C4;" styleClass="staticButton" text="Setting" textFill="WHITE" />
+            <Button fx:id="staticButton1111" layoutX="15.0" layoutY="166.0" mnemonicParsing="false" onAction="#statisticButtonClick" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: #A892C4; -fx-border-color: #A892C4;" styleClass="staticButton" text="Help" textFill="WHITE" />
+            <Button fx:id="staticButton11111" layoutX="15.0" layoutY="215.0" mnemonicParsing="false" onAction="#statisticButtonClick" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: #A892C4; -fx-border-color: #A892C4;" styleClass="staticButton" text="About us" textFill="WHITE" />
+            <Button fx:id="staticButton11121" layoutX="15.0" layoutY="296.0" mnemonicParsing="false" onAction="#statisticButtonClick" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: #A892C4; -fx-border-color: #A892C4;" styleClass="staticButton" text="Support us" textFill="WHITE" AnchorPane.leftAnchor="15.0" />
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>
