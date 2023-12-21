@@ -1,14 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.gluonhq.charm.glisten.control.Avatar?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="org.windhand.controller.HelpPage"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.windhand.controller.MainWindowController">
+   <children>
+      <AnchorPane layoutX="182.0" layoutY="52.0" prefHeight="348.0" prefWidth="419.0" style="-fx-background-color: #29273c;" />
+      <AnchorPane layoutX="-7.0" layoutY="52.0" prefHeight="348.0" prefWidth="189.0" style="-fx-background-color: #333366;">
+         <children>
+            <Button fx:id="staticButton" layoutX="15.0" layoutY="20.0" mnemonicParsing="false" onAction="#statisticButtonClick" prefHeight="26.0" prefWidth="159.0" styleClass="staticButton" text="Statistic" />
+            <Button fx:id="assistantButton" layoutX="15.0" layoutY="63.0" mnemonicParsing="false" onAction="#assistantButtonClick" prefHeight="26.0" prefWidth="159.0" styleClass="assistantButton" text="Assistant" />
+            <Button fx:id="taskButton" layoutX="15.0" layoutY="104.0" mnemonicParsing="false" onAction="#taskButtonClick" prefHeight="26.0" prefWidth="159.0" styleClass="taskButton" text="Task" />
+            <Button fx:id="blockerButton" layoutX="15.0" layoutY="148.0" mnemonicParsing="false" onAction="#blockerButtonClick" prefHeight="26.0" prefWidth="159.0" styleClass="blockerButton" text="Blocker" />
+            <Button fx:id="settingButton" layoutX="15.0" layoutY="187.0" mnemonicParsing="false" onAction="#settingButtonClick" prefHeight="26.0" prefWidth="159.0" styleClass="settingButton" text="Setting" />
+            <Button fx:id="helpButton" layoutX="15.0" layoutY="227.0" mnemonicParsing="false" onAction="#helpButtonClick" prefHeight="26.0" prefWidth="159.0" styleClass="helpButton" text="Help" />
+            <Button fx:id="aboutUsButton" layoutX="15.0" layoutY="268.0" mnemonicParsing="false" onAction="#aboutUsButtonClick" prefHeight="26.0" prefWidth="159.0" styleClass="aboutUs" text="About us" />
+            <Button fx:id="normalWorkButton" layoutX="94.0" layoutY="310.0" mnemonicParsing="false" onAction="#normalButtonClick" prefHeight="24.0" prefWidth="73.0" styleClass="normalButton" text="Normal" textFill="WHITE" />
+            <Button fx:id="workButton" layoutX="20.0" layoutY="310.0" mnemonicParsing="false" onAction="#workButtonClick" prefHeight="26.0" prefWidth="73.0" styleClass="workButton" text="Work" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <ChoiceBox fx:id="workSpaceChoiceBox" layoutX="355.0" layoutY="14.0" onAction="#chooseWorkSpace" prefHeight="26.0" prefWidth="231.0" />
+      <Label layoutX="51.0" layoutY="16.0" onMouseClicked="#registrationOrAuthorization" text="Your account" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="198.0" layoutY="16.0" text="Your work space:" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Avatar id="AccountIcon" layoutX="8.0" layoutY="10.0" onMouseClicked="#registrationOrAuthorization" style="-fx-background-color: #FF0000;" />
+      <Line endX="-108.0" endY="-216.0" layoutX="291.0" layoutY="215.0" startX="-107.99998474121094" startY="-163.0" stroke="WHITE" />
+   </children>
 </AnchorPane>
